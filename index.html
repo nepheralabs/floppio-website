@@ -1,21 +1,212 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floppio — Coming Soon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e10">
+  <meta name="description" content="Floppio is a new daily trivia game where uncommon answers earn bigger points. Think rare. Don't flop.">
+  <title>Floppio — Think Rare. Don't Flop.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    <h1>FLOPPIO</h1>
-    <h2>Think rare. Don't flop.</h2>
+  <div class="site-shell">
 
-    <p>Something awesome is booting up!</p>
+    <header class="topbar">
+      <div class="topbar-brand">
+        <span aria-hidden="true">▣</span>
+        <span>FLOPPIO.EXE</span>
+      </div>
 
-    <button type="button">INSERT DISK</button>
+      <nav aria-label="Main navigation">
+        <a class="active" href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#coming-soon">COMING SOON</a>
+      </nav>
 
-    <footer>
-        <p>A Nephera Studios Game</p>
+      <div class="connection-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        SYSTEM ONLINE
+      </div>
+    </header>
+
+    <main id="home">
+
+      <section class="hero" aria-label="Floppio">
+        <img
+          class="hero-logo"
+          src="assets/images/floppio-logo.png"
+          alt="FLOPPIO — Think rare. Don't flop."
+          fetchpriority="high"
+        >
+      </section>
+
+      <div class="dashboard">
+
+        <aside class="side-column">
+
+          <section class="terminal-panel" aria-labelledby="boot-heading">
+            <h2 id="boot-heading" class="panel-title">
+              &gt;&gt; BOOT SEQUENCE
+            </h2>
+
+            <div class="panel-content boot-list">
+              <p><span class="ok">[ OK ]</span> MEMORY CHECK</p>
+              <p><span class="ok">[ OK ]</span> TRIVIA MODULE</p>
+              <p><span class="ok">[ OK ]</span> RARITY ENGINE</p>
+              <p><span class="pending">[ ... ]</span> DAILY DISK</p>
+              <p><span class="pending">[ ... ]</span> FUN FACTOR</p>
+              <p><span class="pending">[ ... ]</span> PREPARING LAUNCH</p>
+            </div>
+          </section>
+
+          <section id="about" class="terminal-panel" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="panel-title">
+              &gt;&gt; ABOUT FLOPPIO
+            </h2>
+
+            <div class="panel-content about-copy">
+              <p>
+                A new daily trivia experience is booting up.
+                Answer interesting questions, but here's the twist:
+                the rarer your correct answer, the bigger the points.
+              </p>
+
+              <p>
+                Same question. Different minds.<br>
+                Some answers are common.<br>
+                <strong>The rare ones win.</strong>
+              </p>
+            </div>
+          </section>
+
+        </aside>
+
+        <section class="game-center" aria-label="Daily Trivia Disk">
+
+          <div id="disk-scene" class="disk-scene">
+            <img
+              id="floppy-disk"
+              class="floppy-disk"
+              src="assets/images/floppio-disk.png"
+              alt="Floppio Daily Trivia Disk"
+              draggable="false"
+            >
+
+            <img
+              class="floppy-drive"
+              src="assets/images/floppio-drive.png"
+              alt="Vintage floppy disk drive"
+              draggable="false"
+            >
+          </div>
+
+          <button id="insert-button" class="insert-button" type="button">
+            <span>INSERT DISK</span>
+            <span aria-hidden="true">▶</span>
+          </button>
+
+          <p id="drive-message" class="drive-message" role="status" aria-live="polite">
+            Drive not ready. Check back soon.
+          </p>
+
+          <div id="boot-result" class="boot-result" hidden role="status">
+            <strong>DRIVE NOT READY</strong>
+            <p>Floppio is still booting up!</p>
+            <p>A new daily challenge is coming soon.</p>
+            <button id="reset-button" class="reset-button" type="button">
+              TRY AGAIN
+            </button>
+          </div>
+
+        </section>
+
+        <aside class="side-column">
+
+          <section id="status" class="terminal-panel" aria-labelledby="status-heading">
+            <h2 id="status-heading" class="panel-title">
+              &gt;&gt; SYSTEM STATUS
+            </h2>
+
+            <div class="panel-content">
+              <div class="status-line">
+                <span>SYSTEM:</span>
+                <strong>UNDER CONSTRUCTION</strong>
+              </div>
+              <div class="status-line">
+                <span>DAILY DISK:</span>
+                <strong>NOT YET INSERTED</strong>
+              </div>
+              <div class="status-line">
+                <span>LOADING:</span>
+                <strong id="loading-label">SOMETHING AWESOME...</strong>
+              </div>
+
+              <div class="progress-track" role="progressbar"
+                   aria-label="Launch preparation"
+                   aria-valuemin="0" aria-valuemax="100"
+                   aria-valuenow="25">
+                <div id="progress-fill" class="progress-fill"></div>
+              </div>
+            </div>
+          </section>
+
+          <section id="coming-soon" class="terminal-panel" aria-labelledby="coming-heading">
+            <h2 id="coming-heading" class="panel-title">
+              &gt;&gt; COMING SOON
+            </h2>
+
+            <div class="panel-content feature-list">
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">▦</span>
+                <div>
+                  <h3>A NEW DISK EVERY DAY</h3>
+                  <p>Fresh trivia. New surprises.</p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">★</span>
+                <div>
+                  <h3>RARER ANSWERS EARN MORE</h3>
+                  <p>Think different. Score higher.</p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">✦</span>
+                <div>
+                  <h3>COMPARE YOUR RESULTS</h3>
+                  <p>See how your mind compares.</p>
+                </div>
+              </div>
+
+              <div class="feature">
+                <span class="feature-icon" aria-hidden="true">◆</span>
+                <div>
+                  <h3>SIMPLE. FUN. UNCOMMON.</h3>
+                  <p>Just good trivia, done differently.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </aside>
+      </div>
+
+      <section class="skyline" aria-label="Floppio coming soon">
+        <p>GOOD TRIVIA<br>FINDS A HOME HERE.</p>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <span>✧ A Nephera Studios Game.</span>
+      <span>© <span id="copyright-year">2026</span> FLOPPIO</span>
+      <span>COMING SOON ▮</span>
     </footer>
+
+  </div>
 </body>
 </html>
