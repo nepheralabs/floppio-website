@@ -580,3 +580,21 @@ a:focus-visible {
   }
 }
 
+/* FLOPPIO hero spacing adjustment */
+
+.hero {
+  height: 230px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-logo {
+  width: min(720px, 94%);
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
