@@ -302,6 +302,8 @@ a:focus-visible {
   letter-spacing: -0.5px;
   cursor: pointer;
   transition: filter 0.2s, transform 0.2s;
+  position: relative;
+  z-index: 10;
 }
 
 .insert-button:hover:not(:disabled) {
@@ -439,9 +441,9 @@ a:focus-visible {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 205px;
+  min-height: 280px;
   margin-top: 28px;
-  padding: 20px 15px 50px;
+  padding: 45px 15px 90px;
   background-image: url("assets/images/floppio-skyline.png");
   background-position: center bottom;
   background-size: cover;
