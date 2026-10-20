@@ -149,13 +149,14 @@ a:focus-visible {
     minmax(0, 1fr);
   align-items: start;
   gap: 22px;
+  margin-top: 0;
 }
 
 .side-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 25px;
+  padding-top: 10px;
   min-width: 0;
 }
 
@@ -517,6 +518,10 @@ a:focus-visible {
 
   .connection-status {
     font-size: 10px;
+  }
+ 
+  .hero {
+    height: 165px;
   }
 
   .hero-logo {
