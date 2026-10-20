@@ -1,15 +1,29 @@
+
+/* ==========================================
+   FLOPPIO - RETRO LANDING PAGE
+   Version 1.2 - Skyline Background
+   ========================================== */
+
+/* ---------- Theme ---------- */
+
 :root {
   color-scheme: dark;
+
   --bg: #080e10;
-  --panel: rgba(7, 17, 19, 0.92);
+  --panel: rgba(7, 17, 19, 0.94);
   --border: #23605b;
+
   --green: #33f5aa;
   --green-bright: #45ffc1;
+
   --text: #c8d8e2;
   --muted: #a6b4c9;
   --amber: #ffca76;
+
   --font: "Courier New", Courier, monospace;
 }
+
+/* ---------- Base ---------- */
 
 * {
   box-sizing: border-box;
@@ -17,6 +31,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--bg);
 }
 
 body {
@@ -28,19 +43,20 @@ body {
   line-height: 1.5;
 }
 
-/* Subtle CRT scanlines */
 body::after {
   content: "";
   position: fixed;
   inset: 0;
-  pointer-events: none;
   z-index: 100;
+  pointer-events: none;
+
   background: repeating-linear-gradient(
     to bottom,
     transparent 0,
     transparent 3px,
     rgba(0, 0, 0, 0.13) 4px
   );
+
   opacity: 0.38;
 }
 
@@ -58,11 +74,19 @@ a:focus-visible {
   outline-offset: 4px;
 }
 
+[hidden] {
+  display: none !important;
+}
+
+/* ---------- Site Container ---------- */
+
 .site-shell {
+  width: 100%;
   max-width: 1500px;
   margin: 0 auto;
   min-height: 100vh;
-  padding: 16px 28px 0;
+  padding: 12px 28px 0;
+
   background: radial-gradient(
     ellipse at 50% 38%,
     #102b26 0%,
@@ -71,25 +95,32 @@ a:focus-visible {
   );
 }
 
-/* Top navigation */
+/* ---------- Navigation ---------- */
+
 .topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
+
   min-height: 48px;
   padding: 10px 18px;
+
   border: 1px solid var(--border);
-  box-shadow: inset 0 0 12px rgba(51, 245, 170, 0.05);
   color: var(--green);
   font-size: 12px;
+
+  background: rgba(5, 15, 17, 0.8);
+
+  box-shadow:
+    inset 0 0 12px rgba(51, 245, 170, 0.05);
 }
 
 .topbar-brand {
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
   font-weight: bold;
 }
 
@@ -100,8 +131,8 @@ a:focus-visible {
 }
 
 .topbar nav a {
-  text-decoration: none;
   color: var(--muted);
+  text-decoration: none;
   transition: color 0.2s;
 }
 
@@ -120,60 +151,135 @@ a:focus-visible {
   width: 7px;
   height: 7px;
   margin-right: 6px;
+
   border-radius: 50%;
   background: var(--green);
   box-shadow: 0 0 8px var(--green);
 }
 
-/* Main logo */
+/* ---------- Logo ---------- */
+
 .hero {
+  height: 230px;
+  margin: 0 auto;
+
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 12px auto 4px;
+  justify-content: center;
+
+  overflow: hidden;
 }
 
 .hero-logo {
   display: block;
   width: min(720px, 94%);
   height: auto;
-  mix-blend-mode: screen;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
-/* Three-column dashboard */
+/* ---------- Dashboard ---------- */
+
 .dashboard {
+  position: relative;
+  isolation: isolate;
+
   display: grid;
   grid-template-columns:
     minmax(0, 1fr)
     minmax(320px, 1.3fr)
     minmax(0, 1fr);
+
   align-items: start;
   gap: 22px;
+
   margin-top: 0;
+  padding-bottom: 10px;
 }
+
+/*
+  Desktop skyline background.
+
+  This sits BEHIND dashboard content,
+  near the bottom of the central interface.
+*/
+
+.dashboard::before {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 235px;
+
+  background-image:
+    url("assets/images/floppio-skyline.png");
+
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+
+  opacity: 0.65;
+  pointer-events: none;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 40%,
+    black 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 40%,
+    black 100%
+  );
+}
+
+/* Ensure dashboard content sits above skyline */
+
+.dashboard > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Side Columns ---------- */
 
 .side-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
   padding-top: 10px;
   min-width: 0;
 }
 
+/* ---------- Terminal Panels ---------- */
+
 .terminal-panel {
   min-width: 0;
+  overflow: hidden;
+
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 3px;
-  box-shadow: 0 0 15px rgba(0, 255, 170, 0.035);
-  overflow: hidden;
+
+  box-shadow:
+    0 0 15px rgba(0, 255, 170, 0.035);
 }
 
 .panel-title {
   margin: 0;
   padding: 9px 13px;
+
   color: var(--green);
   border-bottom: 1px solid var(--border);
+
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.4px;
@@ -184,9 +290,12 @@ a:focus-visible {
   font-size: 12px;
 }
 
+/* ---------- Boot Sequence ---------- */
+
 .boot-list p {
   margin: 0 0 7px;
   white-space: nowrap;
+
   font-size: clamp(10px, 0.9vw, 13px);
 }
 
@@ -197,6 +306,8 @@ a:focus-visible {
 .pending {
   color: var(--muted);
 }
+
+/* ---------- About Panel ---------- */
 
 .about-copy {
   font-size: 13px;
@@ -215,96 +326,147 @@ a:focus-visible {
   color: var(--green);
 }
 
-/* Floating floppy and drive */
+/* ---------- Central Game Display ---------- */
+
 .game-center {
-  text-align: center;
   min-width: 0;
+  text-align: center;
 }
 
 .disk-scene {
   position: relative;
+  isolation: isolate;
+
   width: min(100%, 490px);
   aspect-ratio: 1 / 1.12;
+
   margin: 0 auto;
-  isolation: isolate;
 }
+
+/* Floating disk */
 
 .floppy-disk {
   position: absolute;
+  z-index: 2;
+
   width: 72%;
   height: auto;
+
   top: -2%;
   left: 14%;
-  z-index: 2;
-  mix-blend-mode: screen;
-  filter: drop-shadow(0 0 15px rgba(47, 255, 180, 0.25));
-  animation: disk-float 3s ease-in-out infinite;
+
+  filter:
+    drop-shadow(
+      0 0 15px rgba(47, 255, 180, 0.25)
+    );
+
+  animation:
+    disk-float 3s ease-in-out infinite;
+
   transform-origin: center;
   will-change: transform, opacity;
 }
 
+/* Floppy drive */
+
 .floppy-drive {
   position: absolute;
+  z-index: 1;
+
   width: 100%;
   height: auto;
+
   bottom: -1%;
   left: 0;
-  z-index: 1;
-  mix-blend-mode: screen;
 }
+
+/* ---------- Disk Floating Animation ---------- */
 
 @keyframes disk-float {
   0%, 100% {
-    transform: translateY(0) rotate(-1.5deg);
+    transform:
+      translateY(0)
+      rotate(-1.5deg);
   }
+
   50% {
-    transform: translateY(-13px) rotate(1.5deg);
+    transform:
+      translateY(-13px)
+      rotate(1.5deg);
   }
 }
 
+/* ---------- Disk Insertion Animation ---------- */
+
 .disk-scene.inserting .floppy-disk {
-  animation: disk-insert 1.1s ease-in forwards;
+  animation:
+    disk-insert 1.1s ease-in forwards;
 }
 
 @keyframes disk-insert {
   0% {
-    transform: translateY(0) scale(1);
+    transform:
+      translateY(0)
+      scale(1);
+
     opacity: 1;
   }
+
   70% {
-    transform: translateY(125px) scale(0.68);
+    transform:
+      translateY(125px)
+      scale(0.68);
+
     opacity: 1;
   }
+
   100% {
-    transform: translateY(155px) scale(0.12);
+    transform:
+      translateY(155px)
+      scale(0.12);
+
     opacity: 0;
   }
 }
 
-/* Main button */
+/* ---------- Insert Disk Button ---------- */
+
 .insert-button {
+  position: relative;
+  z-index: 10;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 26px;
+
   width: min(85%, 380px);
   min-height: 68px;
+
   margin: -12px auto 0;
   padding: 12px 20px;
+
   border: 3px solid #57ffc2;
   border-radius: 6px;
-  background: linear-gradient(#4affe0, #19d97c);
+
+  background:
+    linear-gradient(#4affe0, #19d97c);
+
   box-shadow:
     0 0 0 4px #153d31,
     0 0 22px rgba(38, 255, 157, 0.28);
+
   color: #05211a;
+
   font-size: clamp(16px, 2vw, 25px);
   font-weight: 900;
   letter-spacing: -0.5px;
+
   cursor: pointer;
-  transition: filter 0.2s, transform 0.2s;
-  position: relative;
-  z-index: 10;
+
+  transition:
+    filter 0.2s,
+    transform 0.2s;
 }
 
 .insert-button:hover:not(:disabled) {
@@ -321,25 +483,31 @@ a:focus-visible {
   cursor: wait;
 }
 
+/* ---------- Drive Messages ---------- */
+
 .drive-message {
   margin: 18px 10px 12px;
+
   color: var(--amber);
+
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.4px;
+
+  text-shadow: 0 0 10px #120b03;
 }
+
+/* ---------- Boot Result ---------- */
 
 .boot-result {
   margin: 18px auto 4px;
   max-width: 390px;
   padding: 16px;
-  border: 1px solid var(--amber);
-  background: rgba(45, 28, 10, 0.9);
-  font-size: 13px;
-}
 
-.boot-result[hidden] {
-  display: none;
+  border: 1px solid var(--amber);
+  background: rgba(45, 28, 10, 0.96);
+
+  font-size: 13px;
 }
 
 .boot-result strong {
@@ -354,10 +522,13 @@ a:focus-visible {
 .reset-button {
   margin-top: 10px;
   padding: 9px 22px;
+
   border: 1px solid var(--green);
   border-radius: 3px;
+
   background: transparent;
   color: var(--green);
+
   cursor: pointer;
 }
 
@@ -365,12 +536,14 @@ a:focus-visible {
   background: rgba(51, 245, 170, 0.12);
 }
 
-/* System status */
+/* ---------- System Status ---------- */
+
 .status-line {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 8px;
+
   margin-bottom: 12px;
   font-size: 11px;
 }
@@ -380,31 +553,42 @@ a:focus-visible {
   font-weight: normal;
 }
 
+/* ---------- Progress Indicator ---------- */
+
 .progress-track {
   width: 100%;
   height: 21px;
+
   margin-top: 19px;
   padding: 3px;
+
   border: 1px solid var(--green);
   border-radius: 2px;
+
   background: #071614;
 }
 
 .progress-fill {
   width: 25%;
   height: 100%;
-  background: repeating-linear-gradient(
-    to right,
-    #37ffc0 0,
-    #37ffc0 19px,
-    #092b23 19px,
-    #092b23 23px
-  );
-  box-shadow: 0 0 12px rgba(51, 245, 170, 0.45);
+
+  background:
+    repeating-linear-gradient(
+      to right,
+      #37ffc0 0,
+      #37ffc0 19px,
+      #092b23 19px,
+      #092b23 23px
+    );
+
+  box-shadow:
+    0 0 12px rgba(51, 245, 170, 0.45);
+
   transition: width 1.3s ease;
 }
 
-/* Features */
+/* ---------- Coming Soon Features ---------- */
+
 .feature-list {
   display: flex;
   flex-direction: column;
@@ -420,6 +604,7 @@ a:focus-visible {
 .feature-icon {
   width: 34px;
   flex-shrink: 0;
+
   color: var(--green);
   font-size: 26px;
   line-height: 1;
@@ -427,64 +612,90 @@ a:focus-visible {
 
 .feature h3 {
   margin: 0 0 4px;
+
   font-size: 11px;
   font-weight: bold;
 }
 
 .feature p {
   margin: 0;
+
   color: var(--muted);
   font-size: 11px;
 }
 
-/* Decorative pixel skyline */
+/* ---------- Skyline Caption ---------- */
+
+/*
+  The illustration is now behind the
+  dashboard on desktop.
+
+  Keep a small caption section instead
+  of a second large skyline image.
+*/
+
 .skyline {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  min-height: 280px;
-  margin-top: 28px;
-  padding: 45px 15px 90px;
-  background-image: url("assets/images/floppio-skyline.png");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  align-items: center;
+
+  min-height: 65px;
+  margin-top: 0;
+  padding: 10px 15px;
+
+  background: none;
   text-align: center;
 }
 
 .skyline p {
-  margin: 0 0 20px;
+  margin: 0;
+
   color: #75bea9;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 3px;
   line-height: 1.8;
+
   text-shadow: 0 0 12px #03130d;
 }
 
-/* Footer */
+/* ---------- Footer ---------- */
+
 .footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
-  padding: 20px 8px;
+
+  padding: 15px 8px;
+
   border-top: 1px solid var(--border);
+
   color: #8ebcac;
   font-size: 11px;
 }
 
-/* Medium screens */
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+/* ---------- Tablets ---------- */
+
 @media (max-width: 1100px) {
+
   .dashboard {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1fr);
   }
 
   .game-center {
     grid-column: 1 / -1;
     grid-row: 1;
+
     max-width: 560px;
     width: 100%;
+
     justify-self: center;
   }
 
@@ -495,10 +706,16 @@ a:focus-visible {
   .boot-list p {
     font-size: 12px;
   }
+
+  .dashboard::before {
+    opacity: 0.45;
+  }
 }
 
-/* Phones */
+/* ---------- Mobile ---------- */
+
 @media (max-width: 650px) {
+
   .site-shell {
     padding: 10px 12px 0;
   }
@@ -511,6 +728,7 @@ a:focus-visible {
 
   .topbar nav {
     order: 3;
+
     width: 100%;
     justify-content: center;
     gap: 17px;
@@ -519,7 +737,7 @@ a:focus-visible {
   .connection-status {
     font-size: 10px;
   }
- 
+
   .hero {
     height: 165px;
   }
@@ -532,14 +750,24 @@ a:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 14px;
+
+    padding-bottom: 0;
+  }
+
+  /* No cityscape behind mobile panels */
+
+  .dashboard::before {
+    display: none;
   }
 
   .game-center {
     order: 0;
+    width: 100%;
   }
 
   .side-column {
     order: 1;
+
     width: 100%;
     padding-top: 0;
     gap: 14px;
@@ -558,9 +786,26 @@ a:focus-visible {
     font-size: 12px;
   }
 
+  /* Mobile skyline returns to footer */
+
   .skyline {
-    min-height: 155px;
+    min-height: 165px;
+    margin-top: 18px;
+    padding: 35px 15px 50px;
+
+    background-image:
+      url("assets/images/floppio-skyline.png");
+
+    background-repeat: no-repeat;
+    background-position: center bottom;
     background-size: cover;
+  }
+
+  .skyline p {
+    color: var(--green);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px #000;
   }
 
   .footer {
@@ -569,7 +814,10 @@ a:focus-visible {
   }
 }
 
+/* ---------- Reduced Motion ---------- */
+
 @media (prefers-reduced-motion: reduce) {
+
   html {
     scroll-behavior: auto;
   }
@@ -584,22 +832,3 @@ a:focus-visible {
     transition: none;
   }
 }
-
-/* FLOPPIO hero spacing adjustment */
-
-.hero {
-  height: 230px;
-  margin: 0 auto;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-logo {
-  width: min(720px, 94%);
-  height: auto;
-  display: block;
-  flex-shrink: 0;
-}
-
