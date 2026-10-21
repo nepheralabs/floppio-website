@@ -992,7 +992,7 @@ main {
    REDUCED MOTION
    ========================================= */
 
-@media (prefers-reduced-motion: reduce) {
+/*@media (prefers-reduced-motion: reduce) {
 
   html {
     scroll-behavior: auto;
@@ -1006,7 +1006,7 @@ main {
   .insert-button,
   .progress-fill {
     transition: none;
-  }
+  }/*
 }
 /* FLOPPIO logo polish */
 
