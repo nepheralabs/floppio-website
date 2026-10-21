@@ -1008,3 +1008,14 @@ main {
     transition: none;
   }
 }
+/* FLOPPIO logo polish */
+
+@media (min-width: 1151px) {
+  .hero {
+    height: 230px;
+  }
+
+  .hero-logo {
+    width: min(650px, 70vw);
+  }
+}
