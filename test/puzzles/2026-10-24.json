@@ -1,0 +1,589 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-10-24",
+  "date": "2026-10-24",
+  "title": "Daily Disk 002 — Across the Map",
+  "sample": false,
+  "editorialNote": "Family testing content. Scores are provisional editorial estimates of answer recall, not measured popularity. Higher scores reward less obvious answers. Prepared offline; publication is not implied.",
+  "prompts": [
+    {
+      "id": "geo-canadian-provinces",
+      "question": "Name one of Canada’s ten provinces. Territories do not count; names or postal abbreviations are accepted.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Ontario",
+          "score": 20,
+          "aliases": [
+            "ON",
+            "Ont"
+          ]
+        },
+        {
+          "canonical": "Quebec",
+          "score": 25,
+          "aliases": [
+            "QC",
+            "PQ",
+            "Que"
+          ]
+        },
+        {
+          "canonical": "British Columbia",
+          "score": 35,
+          "aliases": [
+            "BC",
+            "B C"
+          ]
+        },
+        {
+          "canonical": "Alberta",
+          "score": 40,
+          "aliases": [
+            "AB",
+            "Alta"
+          ]
+        },
+        {
+          "canonical": "Manitoba",
+          "score": 65,
+          "aliases": [
+            "MB",
+            "Man"
+          ]
+        },
+        {
+          "canonical": "Saskatchewan",
+          "score": 75,
+          "aliases": [
+            "SK",
+            "Sask"
+          ]
+        },
+        {
+          "canonical": "Nova Scotia",
+          "score": 55,
+          "aliases": [
+            "NS",
+            "N S"
+          ]
+        },
+        {
+          "canonical": "New Brunswick",
+          "score": 80,
+          "aliases": [
+            "NB",
+            "N B"
+          ]
+        },
+        {
+          "canonical": "Prince Edward Island",
+          "score": 95,
+          "aliases": [
+            "PE",
+            "PEI",
+            "P E I"
+          ]
+        },
+        {
+          "canonical": "Newfoundland and Labrador",
+          "score": 85,
+          "aliases": [
+            "NL",
+            "Newfoundland & Labrador",
+            "Newfoundland",
+            "Nfld",
+            "Nfld and Labrador"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science-eight-moon-phases",
+      "question": "Name one of the eight standard phases of Earth’s Moon. Specify waxing or waning for a crescent or gibbous phase.",
+      "fuzzy": false,
+      "answers": [
+        {
+          "canonical": "New Moon",
+          "score": 25,
+          "aliases": [
+            "New"
+          ]
+        },
+        {
+          "canonical": "Waxing Crescent",
+          "score": 55,
+          "aliases": [
+            "Waxing Crescent Moon"
+          ]
+        },
+        {
+          "canonical": "First Quarter",
+          "score": 50,
+          "aliases": [
+            "First Quarter Moon",
+            "1st Quarter",
+            "1st Quarter Moon"
+          ]
+        },
+        {
+          "canonical": "Waxing Gibbous",
+          "score": 85,
+          "aliases": [
+            "Waxing Gibbous Moon"
+          ]
+        },
+        {
+          "canonical": "Full Moon",
+          "score": 15,
+          "aliases": [
+            "Full"
+          ]
+        },
+        {
+          "canonical": "Waning Gibbous",
+          "score": 95,
+          "aliases": [
+            "Waning Gibbous Moon"
+          ]
+        },
+        {
+          "canonical": "Last Quarter",
+          "score": 70,
+          "aliases": [
+            "Last Quarter Moon",
+            "Third Quarter",
+            "Third Quarter Moon",
+            "3rd Quarter",
+            "3rd Quarter Moon"
+          ]
+        },
+        {
+          "canonical": "Waning Crescent",
+          "score": 75,
+          "aliases": [
+            "Waning Crescent Moon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "movies-disney-animation-1989-1998",
+      "question": "Name a Walt Disney Animation Studios feature film first released in 1989–1998, inclusive. Exclude Pixar films.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "The Little Mermaid",
+          "score": 25,
+          "aliases": [
+            "Little Mermaid"
+          ]
+        },
+        {
+          "canonical": "The Rescuers Down Under",
+          "score": 95,
+          "aliases": [
+            "Rescuers Down Under",
+            "The Rescuers 2",
+            "Rescuers 2"
+          ]
+        },
+        {
+          "canonical": "Beauty and the Beast",
+          "score": 30,
+          "aliases": [
+            "Beauty & the Beast",
+            "Beauty and Beast"
+          ]
+        },
+        {
+          "canonical": "Aladdin",
+          "score": 20,
+          "aliases": []
+        },
+        {
+          "canonical": "The Lion King",
+          "score": 15,
+          "aliases": [
+            "Lion King"
+          ]
+        },
+        {
+          "canonical": "Pocahontas",
+          "score": 55,
+          "aliases": []
+        },
+        {
+          "canonical": "The Hunchback of Notre Dame",
+          "score": 80,
+          "aliases": [
+            "Hunchback of Notre Dame",
+            "The Hunchback",
+            "Hunchback"
+          ]
+        },
+        {
+          "canonical": "Hercules",
+          "score": 65,
+          "aliases": []
+        },
+        {
+          "canonical": "Mulan",
+          "score": 40,
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": "sports-baseball-nine-fielding-positions",
+      "question": "Name one of the nine standard defensive fielding positions in baseball. Give a specific position, not a group such as outfielder.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Pitcher",
+          "score": 20,
+          "aliases": [
+            "P"
+          ]
+        },
+        {
+          "canonical": "Catcher",
+          "score": 25,
+          "aliases": [
+            "C"
+          ]
+        },
+        {
+          "canonical": "First Baseman",
+          "score": 35,
+          "aliases": [
+            "First Base",
+            "1st Base",
+            "1st Baseman",
+            "1B",
+            "First Base Player"
+          ]
+        },
+        {
+          "canonical": "Second Baseman",
+          "score": 65,
+          "aliases": [
+            "Second Base",
+            "2nd Base",
+            "2nd Baseman",
+            "2B",
+            "Second Base Player"
+          ]
+        },
+        {
+          "canonical": "Third Baseman",
+          "score": 70,
+          "aliases": [
+            "Third Base",
+            "3rd Base",
+            "3rd Baseman",
+            "3B",
+            "Third Base Player"
+          ]
+        },
+        {
+          "canonical": "Shortstop",
+          "score": 45,
+          "aliases": [
+            "Short Stop",
+            "SS"
+          ]
+        },
+        {
+          "canonical": "Left Fielder",
+          "score": 80,
+          "aliases": [
+            "Left Field",
+            "LF"
+          ]
+        },
+        {
+          "canonical": "Center Fielder",
+          "score": 55,
+          "aliases": [
+            "Center Field",
+            "Centre Fielder",
+            "Centre Field",
+            "CF"
+          ]
+        },
+        {
+          "canonical": "Right Fielder",
+          "score": 95,
+          "aliases": [
+            "Right Field",
+            "RF"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "games-super-mario-kart-snes-roster",
+      "question": "Name a playable driver in the original Super Mario Kart for the SNES (1992).",
+      "fuzzy": false,
+      "answers": [
+        {
+          "canonical": "Mario",
+          "score": 15,
+          "aliases": []
+        },
+        {
+          "canonical": "Luigi",
+          "score": 30,
+          "aliases": []
+        },
+        {
+          "canonical": "Princess Peach",
+          "score": 40,
+          "aliases": [
+            "Peach",
+            "Princess Toadstool",
+            "Toadstool",
+            "Princess"
+          ]
+        },
+        {
+          "canonical": "Yoshi",
+          "score": 25,
+          "aliases": []
+        },
+        {
+          "canonical": "Bowser",
+          "score": 45,
+          "aliases": [
+            "King Koopa"
+          ]
+        },
+        {
+          "canonical": "Donkey Kong Jr.",
+          "score": 95,
+          "aliases": [
+            "Donkey Kong Junior",
+            "DK Jr",
+            "DK Junior",
+            "DKJ"
+          ]
+        },
+        {
+          "canonical": "Koopa Troopa",
+          "score": 80,
+          "aliases": [
+            "Koopa",
+            "KoopaTroopa"
+          ]
+        },
+        {
+          "canonical": "Toad",
+          "score": 60,
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": "language-nato-phonetic-alphabet",
+      "question": "Name one of the 26 code words in the modern NATO phonetic alphabet (A–Z). Give the word, not its letter.",
+      "fuzzy": false,
+      "answers": [
+        {
+          "canonical": "Alfa",
+          "score": 20,
+          "aliases": [
+            "Alpha"
+          ]
+        },
+        {
+          "canonical": "Bravo",
+          "score": 20,
+          "aliases": []
+        },
+        {
+          "canonical": "Charlie",
+          "score": 25,
+          "aliases": []
+        },
+        {
+          "canonical": "Delta",
+          "score": 30,
+          "aliases": []
+        },
+        {
+          "canonical": "Echo",
+          "score": 40,
+          "aliases": []
+        },
+        {
+          "canonical": "Foxtrot",
+          "score": 55,
+          "aliases": [
+            "Fox Trot"
+          ]
+        },
+        {
+          "canonical": "Golf",
+          "score": 75,
+          "aliases": []
+        },
+        {
+          "canonical": "Hotel",
+          "score": 70,
+          "aliases": []
+        },
+        {
+          "canonical": "India",
+          "score": 70,
+          "aliases": []
+        },
+        {
+          "canonical": "Juliett",
+          "score": 65,
+          "aliases": [
+            "Juliet"
+          ]
+        },
+        {
+          "canonical": "Kilo",
+          "score": 55,
+          "aliases": []
+        },
+        {
+          "canonical": "Lima",
+          "score": 80,
+          "aliases": []
+        },
+        {
+          "canonical": "Mike",
+          "score": 65,
+          "aliases": []
+        },
+        {
+          "canonical": "November",
+          "score": 85,
+          "aliases": []
+        },
+        {
+          "canonical": "Oscar",
+          "score": 55,
+          "aliases": []
+        },
+        {
+          "canonical": "Papa",
+          "score": 75,
+          "aliases": []
+        },
+        {
+          "canonical": "Quebec",
+          "score": 85,
+          "aliases": []
+        },
+        {
+          "canonical": "Romeo",
+          "score": 40,
+          "aliases": []
+        },
+        {
+          "canonical": "Sierra",
+          "score": 60,
+          "aliases": []
+        },
+        {
+          "canonical": "Tango",
+          "score": 35,
+          "aliases": []
+        },
+        {
+          "canonical": "Uniform",
+          "score": 95,
+          "aliases": []
+        },
+        {
+          "canonical": "Victor",
+          "score": 65,
+          "aliases": []
+        },
+        {
+          "canonical": "Whiskey",
+          "score": 45,
+          "aliases": [
+            "Whisky"
+          ]
+        },
+        {
+          "canonical": "X-ray",
+          "score": 60,
+          "aliases": [
+            "Xray"
+          ]
+        },
+        {
+          "canonical": "Yankee",
+          "score": 50,
+          "aliases": []
+        },
+        {
+          "canonical": "Zulu",
+          "score": 50,
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": "music-beatles-original-uk-albums-1963-1966",
+      "question": "Name an original UK Beatles studio album first released in 1963–1966, inclusive. Exclude compilations and US-only album titles.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Please Please Me",
+          "score": 55,
+          "aliases": [
+            "PleasePleaseMe",
+            "PPM"
+          ]
+        },
+        {
+          "canonical": "With the Beatles",
+          "score": 85,
+          "aliases": [
+            "With Beatles",
+            "WTB"
+          ]
+        },
+        {
+          "canonical": "A Hard Day's Night",
+          "score": 35,
+          "aliases": [
+            "Hard Day's Night",
+            "AHDN"
+          ]
+        },
+        {
+          "canonical": "Beatles for Sale",
+          "score": 95,
+          "aliases": [
+            "The Beatles for Sale",
+            "BFS"
+          ]
+        },
+        {
+          "canonical": "Help!",
+          "score": 20,
+          "aliases": []
+        },
+        {
+          "canonical": "Rubber Soul",
+          "score": 30,
+          "aliases": []
+        },
+        {
+          "canonical": "Revolver",
+          "score": 25,
+          "aliases": []
+        }
+      ]
+    }
+  ]
+}
