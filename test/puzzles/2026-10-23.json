@@ -1,0 +1,547 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-10-23",
+  "date": "2026-10-23",
+  "title": "Daily Disk 001 — Family Mix",
+  "sample": false,
+  "editorialNote": "Family testing content. Scores are provisional editorial estimates of answer recall, not measured popularity. Higher scores reward less obvious answers. Prepared offline; publication is not implied.",
+  "prompts": [
+    {
+      "id": "germany-neighbours",
+      "question": "Name a country that shares a land border with Germany.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "France",
+          "score": 20,
+          "aliases": [
+            "French Republic"
+          ]
+        },
+        {
+          "canonical": "Austria",
+          "score": 30,
+          "aliases": [
+            "Republic of Austria"
+          ]
+        },
+        {
+          "canonical": "Poland",
+          "score": 35,
+          "aliases": [
+            "Republic of Poland"
+          ]
+        },
+        {
+          "canonical": "Switzerland",
+          "score": 40,
+          "aliases": [
+            "Swiss Confederation"
+          ]
+        },
+        {
+          "canonical": "Netherlands",
+          "score": 45,
+          "aliases": [
+            "The Netherlands",
+            "Holland"
+          ]
+        },
+        {
+          "canonical": "Belgium",
+          "score": 65,
+          "aliases": [
+            "Kingdom of Belgium"
+          ]
+        },
+        {
+          "canonical": "Denmark",
+          "score": 70,
+          "aliases": [
+            "Kingdom of Denmark"
+          ]
+        },
+        {
+          "canonical": "Czechia",
+          "score": 75,
+          "aliases": [
+            "Czech Republic",
+            "The Czech Republic"
+          ]
+        },
+        {
+          "canonical": "Luxembourg",
+          "score": 95,
+          "aliases": [
+            "Grand Duchy of Luxembourg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science-one-letter-element-symbols",
+      "question": "Name a chemical element whose current symbol is one letter. Give its name or symbol.",
+      "fuzzy": false,
+      "answers": [
+        {
+          "canonical": "Hydrogen",
+          "score": 20,
+          "aliases": [
+            "H"
+          ]
+        },
+        {
+          "canonical": "Boron",
+          "score": 65,
+          "aliases": [
+            "B"
+          ]
+        },
+        {
+          "canonical": "Carbon",
+          "score": 25,
+          "aliases": [
+            "C"
+          ]
+        },
+        {
+          "canonical": "Nitrogen",
+          "score": 35,
+          "aliases": [
+            "N"
+          ]
+        },
+        {
+          "canonical": "Oxygen",
+          "score": 15,
+          "aliases": [
+            "O"
+          ]
+        },
+        {
+          "canonical": "Fluorine",
+          "score": 60,
+          "aliases": [
+            "F"
+          ]
+        },
+        {
+          "canonical": "Phosphorus",
+          "score": 55,
+          "aliases": [
+            "P"
+          ]
+        },
+        {
+          "canonical": "Sulfur",
+          "score": 45,
+          "aliases": [
+            "S",
+            "Sulphur"
+          ]
+        },
+        {
+          "canonical": "Potassium",
+          "score": 50,
+          "aliases": [
+            "K",
+            "Kalium"
+          ]
+        },
+        {
+          "canonical": "Vanadium",
+          "score": 85,
+          "aliases": [
+            "V"
+          ]
+        },
+        {
+          "canonical": "Yttrium",
+          "score": 95,
+          "aliases": [
+            "Y"
+          ]
+        },
+        {
+          "canonical": "Iodine",
+          "score": 55,
+          "aliases": [
+            "I"
+          ]
+        },
+        {
+          "canonical": "Tungsten",
+          "score": 80,
+          "aliases": [
+            "W",
+            "Wolfram"
+          ]
+        },
+        {
+          "canonical": "Uranium",
+          "score": 70,
+          "aliases": [
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "movies-spielberg-sole-director-1980-1999",
+      "question": "Name a theatrical feature film first released in 1980–1999 with Steven Spielberg as its sole credited director. Exclude anthology segments.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Raiders of the Lost Ark",
+          "score": 30,
+          "aliases": [
+            "Indiana Jones and the Raiders of the Lost Ark",
+            "Raiders"
+          ]
+        },
+        {
+          "canonical": "E.T. the Extra-Terrestrial",
+          "score": 20,
+          "aliases": [
+            "ET",
+            "E.T.",
+            "ET the Extraterrestrial",
+            "E T the Extraterrestrial",
+            "ET the Extra Terrestrial"
+          ]
+        },
+        {
+          "canonical": "Indiana Jones and the Temple of Doom",
+          "score": 45,
+          "aliases": [
+            "Temple of Doom",
+            "The Temple of Doom",
+            "Indiana Jones 2",
+            "Indiana Jones II"
+          ]
+        },
+        {
+          "canonical": "The Color Purple",
+          "score": 70,
+          "aliases": [
+            "Color Purple",
+            "The Colour Purple",
+            "Colour Purple"
+          ]
+        },
+        {
+          "canonical": "Empire of the Sun",
+          "score": 85,
+          "aliases": [
+            "Empire of Sun"
+          ]
+        },
+        {
+          "canonical": "Indiana Jones and the Last Crusade",
+          "score": 40,
+          "aliases": [
+            "The Last Crusade",
+            "Last Crusade",
+            "Indiana Jones 3",
+            "Indiana Jones III"
+          ]
+        },
+        {
+          "canonical": "Always",
+          "score": 95,
+          "aliases": []
+        },
+        {
+          "canonical": "Hook",
+          "score": 50,
+          "aliases": []
+        },
+        {
+          "canonical": "Jurassic Park",
+          "score": 15,
+          "aliases": [
+            "JP"
+          ]
+        },
+        {
+          "canonical": "Schindler's List",
+          "score": 45,
+          "aliases": []
+        },
+        {
+          "canonical": "The Lost World: Jurassic Park",
+          "score": 65,
+          "aliases": [
+            "The Lost World",
+            "Lost World",
+            "Jurassic Park 2",
+            "Jurassic Park II",
+            "Jurassic Park The Lost World"
+          ]
+        },
+        {
+          "canonical": "Amistad",
+          "score": 90,
+          "aliases": []
+        },
+        {
+          "canonical": "Saving Private Ryan",
+          "score": 35,
+          "aliases": [
+            "Private Ryan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo-us-states-beginning-m",
+      "question": "Name one of the 50 U.S. states whose name begins with M. State names or postal abbreviations are accepted.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Maine",
+          "score": 30,
+          "aliases": [
+            "ME"
+          ]
+        },
+        {
+          "canonical": "Maryland",
+          "score": 60,
+          "aliases": [
+            "MD"
+          ]
+        },
+        {
+          "canonical": "Massachusetts",
+          "score": 55,
+          "aliases": [
+            "MA",
+            "Mass"
+          ]
+        },
+        {
+          "canonical": "Michigan",
+          "score": 20,
+          "aliases": [
+            "MI",
+            "Mich"
+          ]
+        },
+        {
+          "canonical": "Minnesota",
+          "score": 40,
+          "aliases": [
+            "MN",
+            "Minn"
+          ]
+        },
+        {
+          "canonical": "Mississippi",
+          "score": 35,
+          "aliases": [
+            "MS",
+            "Miss"
+          ]
+        },
+        {
+          "canonical": "Missouri",
+          "score": 50,
+          "aliases": [
+            "MO"
+          ]
+        },
+        {
+          "canonical": "Montana",
+          "score": 95,
+          "aliases": [
+            "MT",
+            "Mont"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "games-mortal-kombat-1992-arcade-roster",
+      "question": "Name one of the seven standard playable fighters in the original 1992 Mortal Kombat arcade game.",
+      "fuzzy": false,
+      "answers": [
+        {
+          "canonical": "Liu Kang",
+          "score": 30,
+          "aliases": [
+            "LiuKang"
+          ]
+        },
+        {
+          "canonical": "Sonya Blade",
+          "score": 65,
+          "aliases": [
+            "Sonya"
+          ]
+        },
+        {
+          "canonical": "Kano",
+          "score": 95,
+          "aliases": []
+        },
+        {
+          "canonical": "Raiden",
+          "score": 50,
+          "aliases": [
+            "Rayden"
+          ]
+        },
+        {
+          "canonical": "Johnny Cage",
+          "score": 45,
+          "aliases": [
+            "Johnny",
+            "Cage"
+          ]
+        },
+        {
+          "canonical": "Scorpion",
+          "score": 20,
+          "aliases": []
+        },
+        {
+          "canonical": "Sub-Zero",
+          "score": 25,
+          "aliases": [
+            "Subzero",
+            "Bi-Han"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "history-us-presidents-first-name-james",
+      "question": "Name a U.S. president whose first given name was James, including those better known by a nickname.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "James Madison",
+          "score": 25,
+          "aliases": [
+            "Madison"
+          ]
+        },
+        {
+          "canonical": "James Monroe",
+          "score": 30,
+          "aliases": [
+            "Monroe"
+          ]
+        },
+        {
+          "canonical": "James K. Polk",
+          "score": 60,
+          "aliases": [
+            "James Polk",
+            "Polk",
+            "James Knox Polk"
+          ]
+        },
+        {
+          "canonical": "James Buchanan",
+          "score": 70,
+          "aliases": [
+            "Buchanan"
+          ]
+        },
+        {
+          "canonical": "James A. Garfield",
+          "score": 65,
+          "aliases": [
+            "James Garfield",
+            "Garfield",
+            "James Abram Garfield"
+          ]
+        },
+        {
+          "canonical": "Jimmy Carter",
+          "score": 95,
+          "aliases": [
+            "Carter",
+            "James Carter",
+            "James Earl Carter",
+            "James Earl Carter Jr",
+            "James Earl Carter Junior",
+            "James E Carter",
+            "James E Carter Jr"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "music-nirvana-pearl-jam-studio-albums-1990s",
+      "question": "Name a studio album first released by Nirvana or Pearl Jam in 1990–1999. Exclude live albums, compilations and reissues.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Nevermind",
+          "score": 20,
+          "aliases": [
+            "Never Mind",
+            "Nirvana Nevermind",
+            "Nevermind by Nirvana"
+          ]
+        },
+        {
+          "canonical": "In Utero",
+          "score": 45,
+          "aliases": [
+            "InUtero",
+            "Nirvana In Utero",
+            "In Utero by Nirvana"
+          ]
+        },
+        {
+          "canonical": "Ten",
+          "score": 25,
+          "aliases": [
+            "10",
+            "Pearl Jam Ten",
+            "Ten by Pearl Jam"
+          ]
+        },
+        {
+          "canonical": "Vs.",
+          "score": 55,
+          "aliases": [
+            "Versus",
+            "V S",
+            "Pearl Jam Vs",
+            "Vs by Pearl Jam"
+          ]
+        },
+        {
+          "canonical": "Vitalogy",
+          "score": 65,
+          "aliases": [
+            "Pearl Jam Vitalogy",
+            "Vitalogy by Pearl Jam"
+          ]
+        },
+        {
+          "canonical": "No Code",
+          "score": 95,
+          "aliases": [
+            "NoCode",
+            "Pearl Jam No Code",
+            "No Code by Pearl Jam"
+          ]
+        },
+        {
+          "canonical": "Yield",
+          "score": 80,
+          "aliases": [
+            "Pearl Jam Yield",
+            "Yield by Pearl Jam"
+          ]
+        }
+      ]
+    }
+  ]
+}

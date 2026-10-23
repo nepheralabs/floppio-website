@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-10-25",
+  "date": "2026-10-25",
+  "title": "Daily Disk 003 — Sunday Variety",
+  "sample": false,
+  "editorialNote": "Family testing content. Scores are provisional editorial estimates of answer recall, not measured popularity. Higher scores reward less obvious answers. Prepared offline; publication is not implied.",
+  "prompts": [
+    {
+      "id": "geo-south-america-sovereign-states",
+      "question": "Name one of the twelve sovereign countries whose capital is on the South American mainland. Exclude territories.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Argentina",
+          "score": 25,
+          "aliases": [
+            "Argentine Republic"
+          ]
+        },
+        {
+          "canonical": "Bolivia",
+          "score": 60,
+          "aliases": [
+            "Plurinational State of Bolivia"
+          ]
+        },
+        {
+          "canonical": "Brazil",
+          "score": 15,
+          "aliases": [
+            "Brasil",
+            "Federative Republic of Brazil"
+          ]
+        },
+        {
+          "canonical": "Chile",
+          "score": 30,
+          "aliases": [
+            "Republic of Chile"
+          ]
+        },
+        {
+          "canonical": "Colombia",
+          "score": 40,
+          "aliases": [
+            "Republic of Colombia"
+          ]
+        },
+        {
+          "canonical": "Ecuador",
+          "score": 55,
+          "aliases": [
+            "Republic of Ecuador"
+          ]
+        },
+        {
+          "canonical": "Guyana",
+          "score": 85,
+          "aliases": [
+            "Cooperative Republic of Guyana",
+            "Co-operative Republic of Guyana"
+          ]
+        },
+        {
+          "canonical": "Paraguay",
+          "score": 75,
+          "aliases": [
+            "Republic of Paraguay"
+          ]
+        },
+        {
+          "canonical": "Peru",
+          "score": 35,
+          "aliases": [
+            "Republic of Peru"
+          ]
+        },
+        {
+          "canonical": "Suriname",
+          "score": 95,
+          "aliases": [
+            "Surinam",
+            "Republic of Suriname"
+          ]
+        },
+        {
+          "canonical": "Uruguay",
+          "score": 70,
+          "aliases": [
+            "Oriental Republic of Uruguay"
+          ]
+        },
+        {
+          "canonical": "Venezuela",
+          "score": 45,
+          "aliases": [
+            "Bolivarian Republic of Venezuela"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "culture-chinese-zodiac-animals",
+      "question": "Name one of the twelve animals in the traditional Chinese zodiac.",
+      "fuzzy": false,
+      "answers": [
+        {
+          "canonical": "Rat",
+          "score": 40,
+          "aliases": [
+            "Mouse"
+          ]
+        },
+        {
+          "canonical": "Ox",
+          "score": 70,
+          "aliases": [
+            "Oxen",
+            "Bull",
+            "Cow",
+            "Cattle"
+          ]
+        },
+        {
+          "canonical": "Tiger",
+          "score": 30,
+          "aliases": []
+        },
+        {
+          "canonical": "Rabbit",
+          "score": 45,
+          "aliases": [
+            "Hare"
+          ]
+        },
+        {
+          "canonical": "Dragon",
+          "score": 15,
+          "aliases": []
+        },
+        {
+          "canonical": "Snake",
+          "score": 50,
+          "aliases": [
+            "Serpent"
+          ]
+        },
+        {
+          "canonical": "Horse",
+          "score": 35,
+          "aliases": []
+        },
+        {
+          "canonical": "Goat",
+          "score": 85,
+          "aliases": [
+            "Sheep",
+            "Ram"
+          ]
+        },
+        {
+          "canonical": "Monkey",
+          "score": 55,
+          "aliases": []
+        },
+        {
+          "canonical": "Rooster",
+          "score": 95,
+          "aliases": [
+            "Cockerel",
+            "Cock",
+            "Chicken",
+            "Hen"
+          ]
+        },
+        {
+          "canonical": "Dog",
+          "score": 25,
+          "aliases": []
+        },
+        {
+          "canonical": "Pig",
+          "score": 60,
+          "aliases": [
+            "Boar",
+            "Hog"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "movies-best-picture-release-years-1990-1999",
+      "question": "Name a film first released in 1990–1999 that won the Academy Award for Best Picture. Use the film’s release year, not the ceremony year.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Dances with Wolves",
+          "score": 65,
+          "aliases": []
+        },
+        {
+          "canonical": "The Silence of the Lambs",
+          "score": 35,
+          "aliases": [
+            "Silence of the Lambs"
+          ]
+        },
+        {
+          "canonical": "Unforgiven",
+          "score": 80,
+          "aliases": []
+        },
+        {
+          "canonical": "Schindler's List",
+          "score": 40,
+          "aliases": []
+        },
+        {
+          "canonical": "Forrest Gump",
+          "score": 20,
+          "aliases": []
+        },
+        {
+          "canonical": "Braveheart",
+          "score": 45,
+          "aliases": [
+            "Brave Heart"
+          ]
+        },
+        {
+          "canonical": "The English Patient",
+          "score": 95,
+          "aliases": [
+            "English Patient"
+          ]
+        },
+        {
+          "canonical": "Titanic",
+          "score": 15,
+          "aliases": []
+        },
+        {
+          "canonical": "Shakespeare in Love",
+          "score": 85,
+          "aliases": []
+        },
+        {
+          "canonical": "American Beauty",
+          "score": 60,
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": "math-positive-divisors-of-60",
+      "question": "Name a positive whole-number factor of 60: a number that divides 60 with no remainder. Factors do not have to be prime.",
+      "fuzzy": false,
+      "answers": [
+        {
+          "canonical": "1",
+          "score": 15,
+          "aliases": [
+            "One"
+          ]
+        },
+        {
+          "canonical": "2",
+          "score": 20,
+          "aliases": [
+            "Two"
+          ]
+        },
+        {
+          "canonical": "3",
+          "score": 35,
+          "aliases": [
+            "Three"
+          ]
+        },
+        {
+          "canonical": "4",
+          "score": 60,
+          "aliases": [
+            "Four"
+          ]
+        },
+        {
+          "canonical": "5",
+          "score": 30,
+          "aliases": [
+            "Five"
+          ]
+        },
+        {
+          "canonical": "6",
+          "score": 50,
+          "aliases": [
+            "Six"
+          ]
+        },
+        {
+          "canonical": "10",
+          "score": 25,
+          "aliases": [
+            "Ten"
+          ]
+        },
+        {
+          "canonical": "12",
+          "score": 95,
+          "aliases": [
+            "Twelve"
+          ]
+        },
+        {
+          "canonical": "15",
+          "score": 85,
+          "aliases": [
+            "Fifteen"
+          ]
+        },
+        {
+          "canonical": "20",
+          "score": 75,
+          "aliases": [
+            "Twenty"
+          ]
+        },
+        {
+          "canonical": "30",
+          "score": 55,
+          "aliases": [
+            "Thirty"
+          ]
+        },
+        {
+          "canonical": "60",
+          "score": 40,
+          "aliases": [
+            "Sixty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "games-clue-classic-six-suspects",
+      "question": "Name one of the six suspects in the classic 1949 Clue/Cluedo board game. Later replacement characters do not count.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Miss Scarlet",
+          "score": 25,
+          "aliases": [
+            "Miss Scarlett",
+            "Scarlet",
+            "Scarlett"
+          ]
+        },
+        {
+          "canonical": "Colonel Mustard",
+          "score": 20,
+          "aliases": [
+            "Col Mustard",
+            "Mustard"
+          ]
+        },
+        {
+          "canonical": "Mrs. White",
+          "score": 65,
+          "aliases": [
+            "White",
+            "Mrs. Blanche White"
+          ]
+        },
+        {
+          "canonical": "Mr. Green",
+          "score": 55,
+          "aliases": [
+            "Green",
+            "Reverend Green",
+            "Rev Green"
+          ]
+        },
+        {
+          "canonical": "Mrs. Peacock",
+          "score": 75,
+          "aliases": [
+            "Peacock"
+          ]
+        },
+        {
+          "canonical": "Professor Plum",
+          "score": 95,
+          "aliases": [
+            "Prof Plum",
+            "Plum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "books-chronicles-of-narnia-seven-novels",
+      "question": "Name one of the seven original novels in C. S. Lewis’s The Chronicles of Narnia.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "The Lion, the Witch and the Wardrobe",
+          "score": 15,
+          "aliases": [
+            "Lion the Witch and the Wardrobe",
+            "Lion Witch and Wardrobe",
+            "Lion Witch Wardrobe",
+            "Lion Witch and the Wardrobe",
+            "The Lion the Witch & the Wardrobe",
+            "The Lion Witch and Wardrobe",
+            "LWW"
+          ]
+        },
+        {
+          "canonical": "Prince Caspian",
+          "score": 30,
+          "aliases": [
+            "Prince Caspian The Return to Narnia",
+            "Caspian"
+          ]
+        },
+        {
+          "canonical": "The Voyage of the Dawn Treader",
+          "score": 45,
+          "aliases": [
+            "Voyage of the Dawn Treader",
+            "Voyage of Dawn Treader",
+            "The Dawn Treader",
+            "Dawn Treader",
+            "VOTDT"
+          ]
+        },
+        {
+          "canonical": "The Silver Chair",
+          "score": 75,
+          "aliases": [
+            "Silver Chair"
+          ]
+        },
+        {
+          "canonical": "The Horse and His Boy",
+          "score": 95,
+          "aliases": [
+            "Horse and His Boy",
+            "The Horse & His Boy"
+          ]
+        },
+        {
+          "canonical": "The Magician's Nephew",
+          "score": 65,
+          "aliases": [
+            "Magician's Nephew"
+          ]
+        },
+        {
+          "canonical": "The Last Battle",
+          "score": 80,
+          "aliases": [
+            "Last Battle"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sports-nhl-original-six",
+      "question": "Name an NHL franchise in the “Original Six” group that made up the league from 1942–43 through 1966–67.",
+      "fuzzy": true,
+      "answers": [
+        {
+          "canonical": "Boston Bruins",
+          "score": 40,
+          "aliases": [
+            "Bruins",
+            "Boston"
+          ]
+        },
+        {
+          "canonical": "Chicago Blackhawks",
+          "score": 65,
+          "aliases": [
+            "Chicago Black Hawks",
+            "Blackhawks",
+            "Black Hawks",
+            "Chicago"
+          ]
+        },
+        {
+          "canonical": "Detroit Red Wings",
+          "score": 35,
+          "aliases": [
+            "Red Wings",
+            "Detroit"
+          ]
+        },
+        {
+          "canonical": "Montreal Canadiens",
+          "score": 25,
+          "aliases": [
+            "Canadiens",
+            "Montreal",
+            "Habs",
+            "Les Canadiens",
+            "Canadiens de Montreal",
+            "Montreal Canadians"
+          ]
+        },
+        {
+          "canonical": "New York Rangers",
+          "score": 55,
+          "aliases": [
+            "Rangers",
+            "NY Rangers",
+            "N Y Rangers",
+            "New York"
+          ]
+        },
+        {
+          "canonical": "Toronto Maple Leafs",
+          "score": 95,
+          "aliases": [
+            "Maple Leafs",
+            "Toronto",
+            "Leafs"
+          ]
+        }
+      ]
+    }
+  ]
+}
