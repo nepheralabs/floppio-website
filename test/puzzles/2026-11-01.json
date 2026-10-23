@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-11-01",
+  "date": "2026-11-01",
+  "title": "The first test disk",
+  "sample": true,
+  "editorialNote": "Testing content only. Bounded answer sets reviewed for consistency; scores are provisional editorial choices, not measured popularity.",
+  "prompts": [
+    {
+      "id": "germany-neighbours",
+      "question": "Name a country that shares a land border with Germany.",
+      "answers": [
+        {
+          "canonical": "France",
+          "score": 20,
+          "aliases": [
+            "French Republic"
+          ]
+        },
+        {
+          "canonical": "Austria",
+          "score": 30,
+          "aliases": [
+            "Republic of Austria"
+          ]
+        },
+        {
+          "canonical": "Poland",
+          "score": 35,
+          "aliases": [
+            "Republic of Poland"
+          ]
+        },
+        {
+          "canonical": "Switzerland",
+          "score": 40,
+          "aliases": [
+            "Swiss Confederation"
+          ]
+        },
+        {
+          "canonical": "Netherlands",
+          "score": 45,
+          "aliases": [
+            "The Netherlands",
+            "Holland"
+          ]
+        },
+        {
+          "canonical": "Belgium",
+          "score": 65,
+          "aliases": [
+            "Kingdom of Belgium"
+          ]
+        },
+        {
+          "canonical": "Denmark",
+          "score": 70,
+          "aliases": [
+            "Kingdom of Denmark"
+          ]
+        },
+        {
+          "canonical": "Czechia",
+          "score": 75,
+          "aliases": [
+            "Czech Republic",
+            "The Czech Republic"
+          ]
+        },
+        {
+          "canonical": "Luxembourg",
+          "score": 95,
+          "aliases": [
+            "Grand Duchy of Luxembourg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solar-planets",
+      "question": "Name one of the eight planets in our Solar System.",
+      "answers": [
+        {
+          "canonical": "Earth",
+          "score": 10,
+          "aliases": []
+        },
+        {
+          "canonical": "Mars",
+          "score": 20,
+          "aliases": []
+        },
+        {
+          "canonical": "Jupiter",
+          "score": 30,
+          "aliases": []
+        },
+        {
+          "canonical": "Saturn",
+          "score": 40,
+          "aliases": []
+        },
+        {
+          "canonical": "Venus",
+          "score": 55,
+          "aliases": []
+        },
+        {
+          "canonical": "Mercury",
+          "score": 65,
+          "aliases": []
+        },
+        {
+          "canonical": "Neptune",
+          "score": 80,
+          "aliases": []
+        },
+        {
+          "canonical": "Uranus",
+          "score": 90,
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "id": "natural-noble-gases",
+      "question": "Name a naturally occurring noble gas (element name or symbol).",
+      "answers": [
+        {
+          "canonical": "Helium",
+          "score": 15,
+          "aliases": [
+            "He"
+          ]
+        },
+        {
+          "canonical": "Neon",
+          "score": 25,
+          "aliases": [
+            "Ne"
+          ]
+        },
+        {
+          "canonical": "Argon",
+          "score": 45,
+          "aliases": [
+            "Ar"
+          ]
+        },
+        {
+          "canonical": "Krypton",
+          "score": 65,
+          "aliases": [
+            "Kr"
+          ]
+        },
+        {
+          "canonical": "Xenon",
+          "score": 80,
+          "aliases": [
+            "Xe"
+          ]
+        },
+        {
+          "canonical": "Radon",
+          "score": 95,
+          "aliases": [
+            "Rn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chess-pieces",
+      "question": "Name one of the six types of pieces in standard chess, including pawns.",
+      "answers": [
+        {
+          "canonical": "King",
+          "score": 15,
+          "aliases": [
+            "Kings"
+          ]
+        },
+        {
+          "canonical": "Queen",
+          "score": 20,
+          "aliases": [
+            "Queens"
+          ]
+        },
+        {
+          "canonical": "Pawn",
+          "score": 40,
+          "aliases": [
+            "Pawns"
+          ]
+        },
+        {
+          "canonical": "Knight",
+          "score": 55,
+          "aliases": [
+            "Knights"
+          ]
+        },
+        {
+          "canonical": "Bishop",
+          "score": 75,
+          "aliases": [
+            "Bishops"
+          ]
+        },
+        {
+          "canonical": "Rook",
+          "score": 85,
+          "aliases": [
+            "Rooks",
+            "Castle",
+            "Castles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "si-base-units",
+      "question": "Name one of the seven SI base units (unit name or symbol).",
+      "answers": [
+        {
+          "canonical": "Metre",
+          "score": 15,
+          "aliases": [
+            "Meter",
+            "Metres",
+            "Meters",
+            "m"
+          ]
+        },
+        {
+          "canonical": "Second",
+          "score": 20,
+          "aliases": [
+            "Seconds",
+            "s"
+          ]
+        },
+        {
+          "canonical": "Kilogram",
+          "score": 35,
+          "aliases": [
+            "Kilograms",
+            "kg"
+          ]
+        },
+        {
+          "canonical": "Ampere",
+          "score": 60,
+          "aliases": [
+            "Amperes",
+            "Amp",
+            "Amps",
+            "A"
+          ]
+        },
+        {
+          "canonical": "Kelvin",
+          "score": 70,
+          "aliases": [
+            "Kelvins",
+            "K"
+          ]
+        },
+        {
+          "canonical": "Mole",
+          "score": 80,
+          "aliases": [
+            "Moles",
+            "mol"
+          ]
+        },
+        {
+          "canonical": "Candela",
+          "score": 95,
+          "aliases": [
+            "Candelas",
+            "cd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "primes-under-thirty",
+      "question": "Name a prime number less than 30 (digits or English word).",
+      "fuzzy": false,
+      "answers": [
+        {
+          "canonical": "2",
+          "score": 10,
+          "aliases": [
+            "Two"
+          ]
+        },
+        {
+          "canonical": "3",
+          "score": 15,
+          "aliases": [
+            "Three"
+          ]
+        },
+        {
+          "canonical": "5",
+          "score": 20,
+          "aliases": [
+            "Five"
+          ]
+        },
+        {
+          "canonical": "7",
+          "score": 25,
+          "aliases": [
+            "Seven"
+          ]
+        },
+        {
+          "canonical": "11",
+          "score": 40,
+          "aliases": [
+            "Eleven"
+          ]
+        },
+        {
+          "canonical": "13",
+          "score": 50,
+          "aliases": [
+            "Thirteen"
+          ]
+        },
+        {
+          "canonical": "17",
+          "score": 65,
+          "aliases": [
+            "Seventeen"
+          ]
+        },
+        {
+          "canonical": "19",
+          "score": 75,
+          "aliases": [
+            "Nineteen"
+          ]
+        },
+        {
+          "canonical": "23",
+          "score": 85,
+          "aliases": [
+            "Twenty three",
+            "Twenty-three"
+          ]
+        },
+        {
+          "canonical": "29",
+          "score": 95,
+          "aliases": [
+            "Twenty nine",
+            "Twenty-nine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "olympic-ring-colours",
+      "question": "Name one of the five ring colours in the full-colour Olympic symbol.",
+      "answers": [
+        {
+          "canonical": "Blue",
+          "score": 20,
+          "aliases": []
+        },
+        {
+          "canonical": "Red",
+          "score": 30,
+          "aliases": []
+        },
+        {
+          "canonical": "Green",
+          "score": 50,
+          "aliases": []
+        },
+        {
+          "canonical": "Yellow",
+          "score": 70,
+          "aliases": []
+        },
+        {
+          "canonical": "Black",
+          "score": 90,
+          "aliases": []
+        }
+      ]
+    }
+  ]
+}
