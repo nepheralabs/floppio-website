@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e10">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Floppio development build. Seven prompts. Think rare. Don't flop.">
+  <title>Floppio · Daily Trivia · V0.1</title>
+  <link rel="stylesheet" href="./game.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#game">Skip to game</a>
+  <div class="shell">
+    <header class="topbar"><span>▣ FLOPPIO.EXE</span><span>V0.1 / TEST BUILD</span></header>
+    <img class="logo" src="./assets/floppio-logo.png" alt="Floppio — Think rare. Don't flop.">
+    <p id="mode" class="mode">DAILY TRIVIA / UTC RESET</p>
+    <p id="storage-warning" class="notice" role="status" hidden></p>
+    <p id="new-day" class="notice" hidden>A new UTC day has begun. <a href="./">Load today's disk</a>. Your current disk stays saved.</p>
+    <main id="game" class="window" tabindex="-1" aria-label="Floppio game"><p>Reading daily disk…</p></main>
+    <noscript><p class="notice">JavaScript is required to play Floppio.</p></noscript>
+    <footer><span>A Nephera Studios Game.</span><span>THINK RARE. DON'T FLOP.</span></footer>
+  </div>
+  <dialog id="reset-dialog" aria-labelledby="reset-title" aria-describedby="reset-description">
+    <form method="dialog">
+      <h2 id="reset-title" data-reset-title></h2>
+      <p id="reset-description" data-reset-description></p>
+      <p class="hint">Only this storage key will be removed:<br><code data-reset-key></code></p>
+      <p class="hint">This action cannot be undone.</p>
+      <div class="actions"><button value="cancel" class="secondary" autofocus>CANCEL</button><button value="reset">CONFIRM RESET</button></div>
+    </form>
+  </dialog>
+</body>
+</html>
